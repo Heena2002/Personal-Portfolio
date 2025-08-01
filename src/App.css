@@ -1,0 +1,102 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light & Dark Mode Backgrounds */
+.light {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #6c5ce7;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #5a4cd4;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Section Headings */
+section h1,
+section h2,
+section h3 {
+  color: inherit;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+/* Resume Button */
+.resume-button {
+  display: inline-block;
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #360061;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  padding: 0 30px;
+}
+
+.skill-box {
+  padding: 10px;
+  background: #e4e4e4;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dark .skill-box {
+  background: #2b2b2b;
+}
+
+.skill-box:hover {
+  background-color: #d0d0d0;
+  transform: translateY(-3px);
+}
+
+.dark .skill-box:hover {
+  background-color: #3a3a3a;
+}
